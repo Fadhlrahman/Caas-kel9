@@ -1,0 +1,31 @@
+myBG {
+  height: 100vh;
+  position: relative;
+}
+
+.myBG::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../assets/Walpaper/Wa1.jpeg");
+  background-size: cover;
+  opacity: 0.1; /* Mengatur tingkat transparansi */
+}
+
+.intro {
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    letter-spacing: 4px;
+  }

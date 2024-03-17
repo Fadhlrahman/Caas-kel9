@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.footer {
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.652);
+    color: #fff;
+    padding: 20px 0;
+    line-height: 25%;
+  }
+
+.my-navbar {
+    /* background-color: rgba(0, 0, 0, 0.652); Warna merah dengan opasitas 0.5 */
+    /* Atau menggunakan notasi hex dengan opasitas */
+    /* background-color: #ff000080; */
+    font-family: 'Roboto', sans-serif;
+  background-color: #70a0de;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-profile {
+    text-align: center;
+}
+
+.member {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
