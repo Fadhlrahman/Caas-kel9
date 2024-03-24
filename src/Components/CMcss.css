@@ -2,16 +2,52 @@
 
 
 .footer {
-    color: #000000;
     position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.652);
     color: #fff;
     padding: 20px 0;
-    line-height: 25%;
-    /* z-index: 1000; */
+    text-align: center;
+    /* margin-bottom: 0px; */
   }
+
+  body {
+    padding-bottom: 60px; /* Sesuaikan dengan tinggi footer Anda */
+}
+
+
+
+  @media (max-width: 768px) {
+    .footer {
+      grid-template-columns: 1fr; /* Tata letak satu kolom pada layar kecil */
+      text-align: center; /* Pusatkan teks pada layar kecil */
+    }
+  }
+
+.intro {
+  background-color: #f8f9fa; /* Warna latar belakang */
+  padding: 20px; /* Ruang dalam di sekitar konten */
+  display: flex;
+  justify-content: center; /* Pusatkan konten horizontal */
+  align-items: center; /* Pusatkan konten vertikal */
+  height: 100vh; /* Gunakan tinggi viewport untuk mengisi seluruh layar */
+  color: teal;
+  font-size: 100px;
+}
+
+/* .title {
+} */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 60px; /* Atur ukuran font yang lebih kecil untuk layar kecil */
+  }
+}
+
+
+  
 
 .my-navbar {
     /* background-color: rgba(0, 0, 0, 0.652); Warna merah dengan opasitas 0.5 */
@@ -30,4 +66,28 @@
     border: 1px solid #ccc;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-space {
+  padding-left: 35px;
+}
+
+.valid {
+  margin: 1px solid; /* Atur ukuran margin hijau */
+  background-color: green; /* Warna background hijau */
+}
+
+.denied {
+  margin: 1px solid; /* Atur ukuran margin merah */
+  background-color: red; /* Warna background merah */
+}
+
+.on {
+  margin: 1px solid; /* Atur ukuran margin hijau */
+  background-color: yellow; /* Warna background hijau */
+}
+
+.off {
+  margin: 1px solid; /* Atur ukuran margin merah */
+  background-color: whitesmoke; /* Warna background merah */
 }

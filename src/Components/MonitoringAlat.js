@@ -3,6 +3,7 @@ import { getDatabase, ref, onValue } from 'firebase/database';
 import { initializeApp } from 'firebase/app';
 import { firebaseConfig } from './firebase'; // Pastikan path sesuai dengan struktur file Anda
 import { Container } from "react-bootstrap";
+import "./CMcss.css";
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -33,20 +34,22 @@ const MonitoringAlat = () => {
   return (
     <Container className="justify-content-center" style={{ fontSize: '25px'}}>
     <div> 
-      <h3>Monitoring Alat</h3>
+      <h3 className='tab-space'>
+        Monitoring Alat
+      </h3>
       {error ? (
         <p>Error: {error}</p>
       ) : sensorData ? (
         <ul>
-          <li>
-            <strong>Card Valid:</strong> {sensorData.card_valid}
-          </li>
-          <li>
+          <div className={`member ${sensorData.card_valid === 'Card Valid' ? 'valid' : 'denied'}`}>
+            <strong >Card Valid:</strong> {sensorData.card_valid}
+          </div>
+          <div className={`member ${sensorData.condition === 'Lampu Menyala' ? 'on' : 'off'}`}>
             <strong>Condition:</strong> {sensorData.condition}
-          </li>
-          <li>
+          </div>
+          <div className="member">
             <strong>LDR:</strong> {sensorData.ldr}
-          </li>
+          </div>
         </ul>
       ) : (
         <p>Loading...</p>
